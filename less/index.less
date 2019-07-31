@@ -58,16 +58,18 @@ html, body {
 }
 
 /*-----------My CSS Code-----------*/
+@top-background: #b3d0ff;
+@title-padding: 1% 6%;
 
 /*-----body-----*/
 body {
   font-family: helvetica;
-  margin: 4% 2% 2% 10%;
+  margin: 4% 25% 4% 25%;
 }
 
 /*-----nav-----*/
 nav {
-  margin: 0% 0% 0% 66%;
+  margin: 0% 0% 3% 66%;
   display: flex;
   justify-content: flex-end;
   justify-content: space-between;
@@ -76,4 +78,72 @@ nav {
 nav a {
   text-decoration: none;
   display: flex;
+}
+
+/*-----box-----*/
+.box {
+	background: @top-background;
+	.image {
+		padding: 10% 0% 3% 6%;
+	}
+
+	.title {
+		font-family: 'Saira Stencil One', cursive;
+		padding: @title-padding;
+		font-size: 3rem;
+		padding: 1% 6%;
+	}
+
+	.garage {
+		padding: @title-padding;
+		font-size: 1.2rem;
+	}
+
+	hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+
+	.p_tag {
+		padding: @title-padding;
+	}
+
+	.build {
+		padding: 1% 6% 7% 6%;
+	}
+
+	button {
+		border: 2px solid black;
+		background-color: white;
+		color: black;
+		padding: 14px 28px;
+		font-size: 20px;
+		cursor: pointer;
+		border-color: #e7e7e7;
+		color: black;
+		font-weight: bolder;
+		color: gray;
+	}
+
+	button:hover {
+		background: #e7e7e7;
+	}
+}
+
+.details {
+	display: flex;
+	padding: 3% 0% 0% 0%;
+
+	.skills {
+		width: 47%;
+		h2 {
+			font-size: 2rem;
+			font-weight: 525;
+		}
+	}
+
+	.services {
+		width: 47%;
+	}
 }
