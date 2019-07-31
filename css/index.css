@@ -206,3 +206,17 @@ nav a {
 .details .services {
   width: 47%;
 }
+.details .services h3 {
+  font-size: 2rem;
+}
+.details .services .border {
+  border-left: 1px solid #cfcfcf;
+  border-top: 1px solid #cfcfcf;
+  border-right: 1px solid #cfcfcf;
+}
+.details .services .border_bottom {
+  border-top: 1px solid #cfcfcf;
+  border-left: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+  border-right: 1px solid #cfcfcf;
+}
