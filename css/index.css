@@ -192,31 +192,70 @@ nav a {
 .box button:hover {
   background: #e7e7e7;
 }
+/*-----details-----*/
 .details {
   display: flex;
   padding: 3% 0% 0% 0%;
 }
 .details .skills {
   width: 47%;
+  padding: 1% 0% 2% 0%;
 }
 .details .skills h2 {
   font-size: 2rem;
   font-weight: 525;
+  padding: 0% 0% 2% 0%;
 }
 .details .services {
   width: 47%;
+  padding: 1% 0% 1% 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .details .services h3 {
   font-size: 2rem;
+  padding: 0% 0% 2% 0%;
 }
 .details .services .border {
+  width: 100%;
+  padding: 4%;
   border-left: 1px solid #cfcfcf;
   border-top: 1px solid #cfcfcf;
   border-right: 1px solid #cfcfcf;
 }
 .details .services .border_bottom {
+  padding: 4%;
   border-top: 1px solid #cfcfcf;
   border-left: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
   border-right: 1px solid #cfcfcf;
+}
+/*-----Experience-----*/
+.experience .certs h3 {
+  font-size: 2rem;
+  padding: 3% 0% 2% 0%;
+}
+.experience .certs #table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.experience .certs #table td,
+.experience .certs #table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.experience .certs #table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.experience .certs #table tr:hover {
+  background-color: #ddd;
+}
+.experience .certs #table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
 }

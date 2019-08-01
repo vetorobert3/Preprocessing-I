@@ -131,37 +131,82 @@ nav a {
 	}
 }
 
+/*-----details-----*/
+@section_pad: 1% 0% 2% 0%;
+
 .details {
 	display: flex;
 	padding: 3% 0% 0% 0%;
 
 	.skills {
 		width: 47%;
-
+		padding: @section_pad;
 		h2 {
 			font-size: 2rem;
 			font-weight: 525;
+			padding: 0% 0% 2% 0%;
 		}
 	}
 
 	.services {
 		width: 47%;
-
+		padding: 1% 0% 1% 4%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
 		h3 {
 			font-size: 2rem;
+			padding: 0% 0% 2% 0%;
 		}
 
 		.border {
+			width: 100%;
+			padding: 4%;
 			border-left: 1px solid #cfcfcf;
 			border-top: 1px solid #cfcfcf;
 			border-right: 1px solid #cfcfcf;
 		}
 
 		.border_bottom {
+			padding: 4%;
 			border-top: 1px solid #cfcfcf;
 			border-left: 1px solid #cfcfcf;
 			border-bottom: 1px solid #cfcfcf;
 			border-right: 1px solid #cfcfcf;
 		}
+	}
+}
+
+/*-----Experience-----*/
+.experience {
+	.certs {
+		h3 {
+			font-size: 2rem;
+			padding: 3% 0% 2% 0%;
+		}
+
+		#table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+		#table td, #table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
 	}
 }
