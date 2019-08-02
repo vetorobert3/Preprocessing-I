@@ -60,6 +60,7 @@ html, body {
 /*-----------My CSS Code-----------*/
 @top-background: #b3d0ff;
 @title-padding: 1% 6%;
+@nav_gray: #646665;
 
 /*-----body-----*/
 body {
@@ -76,6 +77,7 @@ nav {
 }
 
 nav a {
+	color: @nav_gray;
   text-decoration: none;
   display: flex;
 }
@@ -187,6 +189,7 @@ nav a {
 
 /*-----table-----*/
 		#table {
+	padding: 0% 0% 2% 0%;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
@@ -200,13 +203,13 @@ nav a {
 
 #table tr:nth-child(even){background-color: @top-background;}
 
-#table tr:hover {background-color: @top-background;}
+#table tr:hover {background-color: @nav_gray;}
 
 #table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-	background-color: @top-background;
+	background-color: @nav_gray;
   color: white;
 }
 	}
@@ -220,4 +223,42 @@ footer {
   font-weight: 600;
   display: flex;
   justify-content: center;
+}
+
+/*-----mobile-----*/
+@media (max-width: 500px) {
+	body {
+		margin: 5% 4%;
+	}
+
+	nav {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		a {
+		}
+	}
+
+	.image {
+		img {
+			display: none;
+		}
+	}
+
+	.build {
+		display: flex;
+		justify-content: center;
+	}
+
+	.details {
+		display: flex;
+		flex-direction: column;
+		.skills {
+			width: 100%;
+		}
+		.services {
+			width: 100%;
+		}
+	}
 }
