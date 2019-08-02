@@ -185,6 +185,7 @@ nav a {
 			padding: 3% 0% 2% 0%;
 		}
 
+/*-----table-----*/
 		#table {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -193,20 +194,30 @@ nav a {
 
 
 		#table td, #table th {
-  border: 1px solid #ddd;
+  border: 1px solid @top-background;
   padding: 8px;
 }
 
-#table tr:nth-child(even){background-color: #f2f2f2;}
+#table tr:nth-child(even){background-color: @top-background;}
 
-#table tr:hover {background-color: #ddd;}
+#table tr:hover {background-color: @top-background;}
 
 #table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #4CAF50;
+	background-color: @top-background;
   color: white;
 }
 	}
+}
+
+/*-----footer-----*/
+footer {
+  color: @nav_gray;
+  background: @top-background;
+  padding: 3%;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
 }
